@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: url("./bg.avif") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.mac-window {
+  width: 95%;
+  max-width: 1200px;
+  height: 95vh;
+  background: rgba(30, 30, 30, 0.7);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.title-bar {
+  height: 36px;
+  background: rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  gap: 8px;
+}
+
+.circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.red {
+  background: #ff5f57;
+}
+.yellow {
+  background: #ffbd2e;
+}
+.green {
+  background: #28c940;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 250px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+  color: #eee;
+  cursor: pointer;
+}
+
+.sidebar li:hover {
+  color: #0a84ff;
+}
+
+.main {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #0a84ff;
+  margin-right: 20px;
+}
+
+.name {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 5px;
+}
+
+.project,
+.edu,
+.work {
+  margin-bottom: 15px;
+}
+
+.project-title,
+.edu-title,
+.work-title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.tag {
+  display: inline-block;
+  background: #444;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  margin-top: 4px;
+  margin-right: 6px;
+}
+
+a {
+  color: #0a84ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.button-link {
+  display: inline-block;
+  background-color: #0a84ff;
+  color: white;
+  border-radius: 12px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  margin-top: 4px;
+  margin-right: 6px;
+}
+
+.button-link:hover {
+  background-color: #005ac5;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .main {
+    padding: 20px;
+  }
+
+  .avatar {
+    margin-bottom: 10px;
+  }
+}

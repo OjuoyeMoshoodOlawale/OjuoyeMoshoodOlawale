@@ -8,201 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family: "Inter", sans-serif;
-        background: url("./bg.avif") no-repeat center center fixed;
-        background-size: cover;
-        color: white;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-      }
-
-      .mac-window {
-        width: 95%;
-        max-width: 1200px;
-        height: 95vh;
-        background: rgba(30, 30, 30, 0.7);
-        border-radius: 20px;
-        backdrop-filter: blur(15px);
-        box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-      }
-
-      .title-bar {
-        height: 36px;
-        background: rgba(255, 255, 255, 0.06);
-        display: flex;
-        align-items: center;
-        padding: 0 12px;
-        gap: 8px;
-      }
-
-      .circle {
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-      }
-
-      .red {
-        background: #ff5f57;
-      }
-      .yellow {
-        background: #ffbd2e;
-      }
-      .green {
-        background: #28c940;
-      }
-
-      .content {
-        display: flex;
-        flex: 1;
-        overflow: hidden;
-      }
-
-      .sidebar {
-        width: 250px;
-        background: rgba(255, 255, 255, 0.05);
-        padding: 20px;
-        border-right: 1px solid rgba(255, 255, 255, 0.1);
-      }
-
-      .sidebar h3 {
-        font-size: 14px;
-        margin-bottom: 10px;
-        color: #ccc;
-      }
-
-      .sidebar ul {
-        list-style: none;
-      }
-
-      .sidebar li {
-        margin-bottom: 10px;
-        color: #eee;
-        cursor: pointer;
-      }
-
-      .sidebar li:hover {
-        color: #0a84ff;
-      }
-
-      .main {
-        flex: 1;
-        padding: 30px;
-        overflow-y: auto;
-      }
-
-      .header {
-        display: flex;
-        align-items: center;
-        margin-bottom: 30px;
-        flex-wrap: wrap;
-      }
-
-      .avatar {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 3px solid #0a84ff;
-        margin-right: 20px;
-      }
-
-      .name {
-        font-size: 22px;
-        font-weight: 600;
-      }
-
-      .section {
-        margin-bottom: 30px;
-      }
-
-      .section h2 {
-        font-size: 18px;
-        margin-bottom: 10px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        padding-bottom: 5px;
-      }
-
-      .project,
-      .edu,
-      .work {
-        margin-bottom: 15px;
-      }
-
-      .project-title,
-      .edu-title,
-      .work-title {
-        font-weight: bold;
-        font-size: 16px;
-      }
-
-      .tag {
-        display: inline-block;
-        background: #444;
-        padding: 3px 8px;
-        border-radius: 6px;
-        font-size: 11px;
-        margin-top: 4px;
-        margin-right: 6px;
-      }
-
-      a {
-        color: #0a84ff;
-        text-decoration: none;
-      }
-
-      a:hover {
-        text-decoration: underline;
-      }
-
-      .button-link {
-        display: inline-block;
-        background-color: #0a84ff;
-        color: white;
-        border-radius: 12px;
-        font-weight: bold;
-        text-align: center;
-        font-size: 14px;
-        text-decoration: none;
-        transition: background-color 0.3s;
-        padding: 3px 8px;
-        border-radius: 6px;
-        font-size: 11px;
-        margin-top: 4px;
-        margin-right: 6px;
-      }
-
-      .button-link:hover {
-        background-color: #005ac5;
-      }
-
-      @media (max-width: 768px) {
-        .sidebar {
-          display: none;
-        }
-
-        .main {
-          padding: 20px;
-        }
-
-        .avatar {
-          margin-bottom: 10px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="mac-window">
@@ -217,9 +23,9 @@
           <hr />
           <br />
           <ul>
-            <li>Node.js & Express</li>
             <li>PHP & MySQL</li>
-            <li>Python</li>
+            <li>Node.js & Express</li>
+            <li>React.js & Tailwind</li>
             <li>MongoDB & PostgreSQL</li>
             <li>AJAX & jQuery</li>
           </ul>
@@ -229,6 +35,7 @@
           <br />
           <ul>
             <li>Lesson-Quest</li>
+            <li>SwiftTrust Ledger</li>
             <li>AI-Proctored Exam System</li>
             <li>School Mgmt System</li>
           </ul>
@@ -257,20 +64,24 @@
           <div class="section">
             <h2>About Me</h2>
             <p>
-              I'm a fullstack developer passionate about building scalable systems
-              and impactful tech. With strong skills in PHP, Node.js, MySQL, and
-              Express, I build real-world solutions that help businesses thrive.
-              I'm also a student of Mathematics at ABU and Computer Science at
-              UoPeople.
+              Fullstack Developer with strong background in PHP, MySQL,
+              JavaScript, and CSS, plus hands-on experience in React.js,
+              Tailwind CSS, and Bootstrap. Experienced in EdTech development,
+              having built platforms such as AI-driven exam systems and school
+              management tools. Strong analytical foundation with a B.Sc in
+              Mathematics Education and currently pursuing a B.Sc in Computer
+              Science. Passionate about delivering scalable solutions and
+              continuously improving through hands-on projects and freelance
+              work.
             </p>
           </div>
           <section class="section" id="skills">
             <h2>Skills</h2>
             <ul>
               <li>Languages: PHP, JavaScript, Python</li>
-              <li>Frameworks: Express.js, React.js</li>
+              <li>Frameworks: Express.js, React.js, Bootstrap, Tailwind CSS</li>
               <li>Databases: MySQL, PostgreSQL, MongoDB</li>
-              <li>Tools: Git, GitHub, Postman, CPanel</li>
+              <li>Tools: Git, GitHub, Postman, CPanel, Linux</li>
               <li>Other: REST APIs, Authentication, MVC, SQL Joins</li>
             </ul>
           </section>
@@ -283,8 +94,8 @@
               </div>
               <small>Expected: Sept 2025</small>
               <p>
-                Studying mathematics and education, gaining deep analytical
-                thinking and teaching skills.
+                Focused on mathematics and education, gaining analytical
+                thinking and problem-solving skills.
               </p>
             </div>
 
@@ -294,8 +105,9 @@
               </div>
               <small>In Progress</small>
               <p>
-                Focused on software engineering, algorithms, and practical
-                programming. Taking 2 courses per term remotely.
+                Coursework in software engineering, algorithms, and programming.
+                Building strong technical expertise while balancing remote study
+                with real-world development.
               </p>
             </div>
           </div>
@@ -305,24 +117,26 @@
 
             <div class="work">
               <div class="work-title">
-                Remote Developer – Freelance (Upwork & Private Clients)
+                Freelance Fullstack Developer – Remote
               </div>
               <small>2023 – Present</small>
               <p>
-                Developed school management systems, AI-powered exam proctoring,
-                and telemedicine platforms using Node.js, PHP, and SQL.
+                Delivered solutions for school management, AI-powered exam
+                proctoring, and fintech prototypes like SwiftTrust Ledger for
+                interbank communication. Worked with clients on Upwork and
+                privately, building end-to-end applications using Node.js, PHP,
+                SQL, and React.js.
               </p>
             </div>
 
             <div class="work">
-              <div class="work-title">Fullstack DEveloper – Intern</div>
-              <small>Feb 2020- Dec 2020</small>
+              <div class="work-title">Fullstack Developer Intern</div>
+              <small>Feb 2020 – Dec 2020</small>
               <p>
-                Key contributor to School Management ERP using Express, EJS, and
-                SQL. Optimized databases, troubleshooted issues, and adhered to
-                coding best practices. Developed strong problem-solving skills
-                in a collaborative team environment, deepening technical
-                expertise in backend development.
+                Contributed to development of a School ERP system using Express,
+                EJS, and SQL. Improved database performance, debugged features,
+                and collaborated with team members while following industry best
+                practices.
               </p>
             </div>
           </div>
@@ -332,19 +146,29 @@
 
             <div class="project">
               <div class="project-title">
-                Lesson-Quest: AI driven questions generating system
+                SwiftTrust Ledger – Interbank Communication Prototype
               </div>
               <p>
-                Lesson-Quest is an AI-powered web application that helps
-                teachers generate exam questions with ease. By selecting a
-                subject, age range, and question type (e.g., multiple choice,
-                theory, fill in the gap), educators can instantly receive
-                tailored questions using the Cohere API. This tool streamlines
-                exam preparation, saving time and reducing workload during peak
-                academic periodse.
+                A blockchain-inspired secure communication system developed at
+                Hackaholics 6.0 by Wema Bank. Designed to improve trust and
+                transparency between financial institutions for interbank
+                settlement and communication.
               </p>
-              <span class="tag">Express.JS</span
-              ><span class="tag">Cohere API.</span>
+              <span class="tag">Node.js</span><span class="tag">Express.js</span
+              ><span class="tag">PostgreSQL</span>
+            </div>
+
+            <div class="project">
+              <div class="project-title">
+                Lesson-Quest: AI-driven Questions Generator
+              </div>
+              <p>
+                Web application enabling teachers to instantly generate exam
+                questions based on subject, age, and type using Cohere API.
+                Simplifies exam preparation and reduces workload.
+              </p>
+              <span class="tag">Express.js</span
+              ><span class="tag">Cohere API</span>
               <a
                 class="button-link"
                 href="https://lesson-quest-gq3c49qmx-moshoods-projects-825c70db.vercel.app/"
@@ -356,36 +180,23 @@
             <div class="project">
               <div class="project-title">AI-Proctored Exam System</div>
               <p>
-                AI-Proctored Exam System is a web-based application that
-                monitors students during online exams through face detection. It
-                features auto-grading for multiple-choice questions and provides
-                insightful exam analytics for performance evaluation. Built with
-                React on the frontend and Express.js on the backend, the system
-                streamlines remote assessments and reduces the need for manual
-                supervision.
+                Online exam platform with face detection and auto-grading.
+                Provides analytics for performance tracking. Built with React
+                frontend and Express.js backend.
               </p>
               <span class="tag">React.js</span
               ><span class="tag">Express.js</span>
-              <a class="button-link" href="link-to-demo2" target="_blank"
-                >Demo</a
-              >
             </div>
 
             <div class="project">
               <div class="project-title">School Management System</div>
               <p>
-                School Management System is a comprehensive web application
-                designed to manage core school operations. It handles student
-                records, results processing, attendance tracking, and includes
-                an admin dashboard for efficient oversight. Built with PHP,
-                MySQL, and Bootstrap, it offers a user-friendly interface and
-                streamlined management for schools of any size.
+                Comprehensive web app managing student records, results,
+                attendance, and administration. Built with PHP, MySQL, and
+                Bootstrap.
               </p>
               <span class="tag">PHP</span><span class="tag">MySQL</span
               ><span class="tag">Bootstrap</span>
-              <a class="button-link" href="link-to-demo3" target="_blank"
-                >Demo</a
-              >
             </div>
           </div>
 
@@ -407,7 +218,7 @@
               <a
                 href="https://www.linkedin.com/in/moshood-ojuoye-9a27a1219/"
                 target="_blank"
-                >https://www.linkedin.com/in/moshood-ojuoye-9a27a1219/</a
+                >linkedin.com/in/moshood-ojuoye</a
               >
             </p>
             <p>
